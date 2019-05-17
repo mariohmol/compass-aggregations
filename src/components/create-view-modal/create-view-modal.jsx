@@ -7,9 +7,11 @@ import { connect } from 'react-redux';
 
 import { ModalInput, ModalStatusMessage } from 'hadron-react-components';
 
-import { createView } from 'modules/create-view';
-import { changeViewName } from 'modules/create-view/name';
-import { toggleIsVisible } from 'modules/create-view/is-visible';
+import {
+  createView,
+  changeViewName,
+  toggleIsVisible
+} from 'modules/create-view';
 
 import styles from './create-view-modal.less';
 

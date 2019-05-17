@@ -160,3 +160,5 @@ export const createView = () => {
     }
   };
 };
+
+export { toggleIsRunning, nameChanged, reset, INITIAL_STATE };
