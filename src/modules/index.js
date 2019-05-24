@@ -85,6 +85,10 @@ import projections, {
   PROJECTIONS_CHANGED
 } from 'modules/projections';
 
+import viewOn, {
+  INITIAL_STATE as VIEW_ON_INITIAL_STATE
+} from 'modules/view-on';
+
 /**
  * The intial state of the root reducer.
  */
@@ -115,7 +119,8 @@ export const INITIAL_STATE = {
   maxTimeMS: MAX_TIME_MS_INITIAL_STATE,
   isFullscreenOn: FULLSCREEN_INITIAL_STATE,
   savingPipeline: SAVING_PIPELINE_INITIAL_STATE,
-  projections: PROJECTIONS_INITIAL_STATE
+  projections: PROJECTIONS_INITIAL_STATE,
+  viewOn: VIEW_ON_INITIAL_STATE
 };
 
 /**
@@ -180,7 +185,8 @@ const appReducer = combineReducers({
   maxTimeMS,
   isFullscreenOn,
   savingPipeline,
-  projections
+  projections,
+  viewOn
 });
 
 /**
